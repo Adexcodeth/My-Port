@@ -121,6 +121,10 @@ const server = http.createServer(async (request, response) => {
     sendJson(response, 405, { error: "Method not allowed." });
 });
 
-server.listen(port, () => {
-    console.log(`Portfolio running at http://localhost:${port}`);
-});
+if (require.main === module) {
+    server.listen(port, () => {
+        console.log(`Portfolio running at http://localhost:${port}`);
+    });
+}
+
+module.exports = server;
