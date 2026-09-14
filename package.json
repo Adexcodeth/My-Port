@@ -1,0 +1,13 @@
+{
+  "name": "aladex-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aladex Tech portfolio website and contact API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.3"
+  }
+}
